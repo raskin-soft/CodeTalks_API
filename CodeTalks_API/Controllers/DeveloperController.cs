@@ -17,7 +17,8 @@ namespace CodeTalks_API.Controllers
         public IActionResult GetPopularDevelopers([FromQuery] int count)
         {
             var popularDevelopers = _unitOfWork.Developers.GetPopularDevelopers(count);
-            return Ok(popularDevelopers);
+            //return Ok(popularDevelopers);
+            return Ok("Welcome to Code Talks");
         }
 
         [HttpPost]
